@@ -1,0 +1,28 @@
+"My vimrc
+
+color desert
+syntax enable
+syntax on
+
+
+set guifont=YaHei_Consolas_Hybrid:h12
+
+set nu
+set autoindent
+set cindent
+set smarttab
+set tabstop=4
+set showmatch
+set shiftwidth=4
+set softtabstop=4
+set incsearch
+set hlsearch
+set smartindent
+set nobackup
+setlocal noswapfile
+set guioptions-=T
+set guioptions-=m
+
+autocmd FileType c set omnifunc=ccomplete
+autocmd FileType cpp set omnifunc=cppcomplete
+

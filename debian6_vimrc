@@ -1,0 +1,67 @@
+set nocompatible              " be iMproved, required
+filetype off                  " required
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'gmarik/Vundle.vim'
+
+Plugin 'junegunn/seoul256.vim'
+Plugin 'airblade/vim-gitgutter'
+"Plugin 'bling/vim-airline'
+"Plugin 'scrooloose/syntastic'
+
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+
+let g:seoul256_background=234
+colorscheme seoul256
+set t_Co=256
+
+"let g:airline#extension#tabline#enabled=0 
+"let g:airline#extension#tabline#left_sep= ' '
+
+
+syntax enable
+set guifont=Ubuntu\ Mono\ 13
+set nu
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set autoindent
+set cindent
+set incsearch
+set hlsearch
+set mouse=a
+"set laststatus=2
+
+
+hi SpecialKey cterm=bold
+hi NonText cterm=bold
+hi Directory cterm=bold
+hi ErrorMsg cterm=bold
+hi MoreMsg cterm=bold
+hi ModeMsg cterm=bold
+hi LineNr cterm=bold
+hi CursorLineNr cterm=bold
+hi Question cterm=bold
+hi StatusLine cterm=bold
+hi Title cterm=bold
+hi VisualNOS cterm=bold
+hi WarningMsg cterm=bold
+hi Folded cterm=bold
+hi FoldColumn cterm=bold
+hi DiffDelete cterm=bold
+hi DiffText cterm=bold
+hi SignColumn cterm=bold
+hi TabLineSel cterm=bold
+hi Comment cterm=bold
+hi Constant cterm=bold
+hi Special cterm=bold
+hi Identifier cterm=bold
+hi Statement cterm=bold
+hi PreProc cterm=bold
+hi Type cterm=bold
+hi Underlined cterm=bold,underline
+hi Error cterm=bold
+
